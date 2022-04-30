@@ -90,11 +90,13 @@
                 android:layout_height="15dp" />
 
             <TextView
-                android:id="@+id/signup3"
+                android:id="@+id/signupLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
+                android:clickable="true"
+                android:onClick="onClickSignup"
                 android:text="Sign Up"
+                android:gravity="center"
                 android:textSize="20sp" />
         </LinearLayout>
     </LinearLayout>

@@ -7,102 +7,105 @@
     tools:context=".Signup">
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
 
-        <ImageView
-            android:id="@+id/imageView2"
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:srcCompat="@drawable/ic_android_black_24dp" />
+
+            <TextView
+                android:id="@+id/LoginSignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#749DED"
+                android:clickable="true"
+                android:onClick="onClickLogin"
+                android:text="Log In"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            app:srcCompat="@drawable/ic_android_black_24dp" />
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_weight="0"></Space>
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Name"
-            android:inputType="textPersonName" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="10dp" />
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Email Address"
+                android:inputType="textPersonName" />
 
-        <EditText
-            android:id="@+id/email"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Email Address"
-            android:inputType="textPersonName" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:layout_weight="0"></Space>
 
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="10dp"
-            android:layout_weight="0"></Space>
-
-        <EditText
-            android:id="@+id/password"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Password"
-            android:inputType="textPersonName" />
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPersonName" />
 
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="10dp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName2"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Confirm Password"
-            android:inputType="textPersonName" />
+            <EditText
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Confirm Password"
+                android:inputType="textPersonName" />
 
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_weight="0"></Space>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:layout_weight="0"></Space>
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="10dp" />
+            <Button
+                android:id="@+id/login"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="#3D50D1"
+                android:text="Singup" />
 
-        <Button
-            android:id="@+id/login"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:background="#3D50D1"
-            android:text="Singup" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="15dp" />
-
-        <TextView
-            android:id="@+id/LoginSignup"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="onClickLogin"
-            android:clickable="true"
-            android:text="Log In"
-            android:textSize="20sp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
 
 
+        </LinearLayout>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
